@@ -15,6 +15,7 @@
     <nav>
       <a href="index.html">Главная</a>
       <a href="about.html">Об авторе</a>
+      <button id="theme-btn" onclick="toggleTheme()">☀️ Светлая тема</button>
     </nav>
 
     <main>
@@ -48,6 +49,21 @@
     <footer>
       <p>© 2026 Dota 2 Блог</p>
     </footer>
+
+    <script>
+      function toggleTheme() {
+        const body = document.body;
+        const btn = document.getElementById('theme-btn');
+
+        if (body.classList.contains('light')) {
+          body.classList.remove('light');
+          btn.textContent = '☀️ Светлая тема';
+        } else {
+          body.classList.add('light');
+          btn.textContent = '🌙 Тёмная тема';
+        }
+      }
+    </script>
 
   </body>
 </html>
