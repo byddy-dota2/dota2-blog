@@ -22,25 +22,28 @@
       <article>
         <h2>Как правильно играть за Pudge</h2>
         <p class="date">📅 7 августа 2026</p>
+        <img class="hero-img"
+          src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/pudge.png"
+          alt="Pudge">
 
-        <p>Pudge — самый узнаваемый и популярный герой в Dota 2. Роль в команде: гангер, инициатор, дизейблер. Играть за него просто, а вот играть хорошо — требует много практики.</p>
+        <p>Pudge — самый узнаваемый и популярный герой в Dota 2. Роль: гангер, инициатор, дизейблер. Играть за него просто, а вот играть хорошо — требует практики.</p>
 
-        <h3 style="color: #ff4444; margin: 20px 0 8px;">Порядок прокачки умений</h3>
-        <p>Meat Hook → Rot → Flesh Heap → Dismember. В первую очередь качаем Meat Hook, во вторую — Rot. Ультимейт берём при первой возможности — на 6, 12 и 18 уровне.</p>
+        <h3>Порядок прокачки умений</h3>
+        <p>Meat Hook → Rot → Flesh Heap → Dismember. Ультимейт берём на 6, 12 и 18 уровне.</p>
 
-        <h3 style="color: #ff4444; margin: 20px 0 8px;">Стартовые предметы</h3>
+        <h3>Стартовые предметы</h3>
         <p>Gauntlets of Strength, Iron Branch, Quelling Blade, Tango, Healing Salve, Enchanted Mango.</p>
 
-        <h3 style="color: #ff4444; margin: 20px 0 8px;">Мета-сборка</h3>
+        <h3>Мета-сборка</h3>
         <p>Blink Dagger, Black King Bar, Phase Boots, Aghanim's Scepter, Shiva's Guard, Blade Mail.</p>
 
-        <h3 style="color: #ff4444; margin: 20px 0 8px;">Почему именно эти предметы</h3>
-        <p><strong>Blade Mail</strong> — отражает входящий урон обратно на атакующего, что особенно больно для керри.</p>
-        <p><strong>Aghanim's Scepter</strong> — обязательный предмет. Ускоряет перезарядку Meat Hook — можно хукать чаще.</p>
-        <p><strong>Pipe of Insight или Heart of Tarrasque</strong> — усиливают сопротивление магии или регенерацию здоровья.</p>
+        <h3>Почему именно эти предметы</h3>
+        <p><strong>Blade Mail</strong> — отражает входящий урон обратно на атакующего, особенно больно для керри.</p>
+        <p><strong>Aghanim's Scepter</strong> — ускоряет перезарядку Meat Hook, можно хукать чаще.</p>
+        <p><strong>Pipe of Insight или Heart of Tarrasque</strong> — усиливают живучесть в драках.</p>
 
-        <h3 style="color: #ff4444; margin: 20px 0 8px;">Главный совет новичкам</h3>
-        <p>Основная проблема — промахи хуком. Чувство дистанции и предсказание движения врага приходит только с опытом и практикой.</p>
+        <h3>Главный совет</h3>
+        <p>Основная проблема — промахи хуком. Чувство дистанции и предсказание движения врага приходит только с практикой.</p>
 
         <br>
         <a href="index.html">← Назад на главную</a>
@@ -54,12 +57,10 @@
     <script>
       const body = document.body;
       const btn = document.getElementById('theme-btn');
-
       if (localStorage.getItem('theme') === 'light') {
         body.classList.add('light');
         if (btn) btn.textContent = '🌙 Тёмная тема';
       }
-
       function toggleTheme() {
         if (body.classList.contains('light')) {
           body.classList.remove('light');

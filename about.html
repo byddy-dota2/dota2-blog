@@ -22,19 +22,26 @@
       <article>
         <h2>Об авторе</h2>
 
-        <p>Привет! Я автор этого блога и игрок в Dota 2 с опытом около года. За это время успел разобраться в механиках игры, понять мету и найти своих любимых героев.</p>
+        <img class="hero-img"
+          src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/phantom_lancer.png"
+          alt="Phantom Lancer">
 
-        <h3 style="color: #ff4444; margin: 20px 0 8px;">🎮 Моя позиция</h3>
+        <p>Привет! Я автор этого блога и игрок в Dota 2 с опытом около года. За это время разобрался в механиках, понял мету и нашёл своих любимых героев.</p>
+
+        <h3>🎮 Моя позиция</h3>
         <p>Играю на позиции <strong>керри (позиция 1)</strong>. Люблю фармить, скейлиться и выигрывать поздние игры.</p>
 
-        <h3 style="color: #ff4444; margin: 20px 0 8px;">⚔️ Любимые герои</h3>
-        <p><strong>Phantom Lancer</strong> — мой главный герой. Армия иллюзий, которую невозможно убить в поздней игре. Враги просто не знают, в кого стрелять.</p>
+        <h3>⚔️ Любимые герои</h3>
+        <img class="hero-img"
+          src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/antimage.png"
+          alt="Anti-Mage">
+        <p><strong>Phantom Lancer</strong> — мой главный герой. Армия иллюзий, которую невозможно убить в поздней игре.</p>
         <p><strong>Anti-Mage</strong> — второй фаворит. Быстрый фарм, телепорт и огромный урон по героям с большим запасом маны.</p>
 
-        <h3 style="color: #ff4444; margin: 20px 0 8px;">📊 Мой MMR</h3>
+        <h3>📊 Мой MMR</h3>
         <p>Текущий рейтинг — <strong>1700 MMR</strong> (Crusader). Постепенно расту и учусь.</p>
 
-        <h3 style="color: #ff4444; margin: 20px 0 8px;">✍️ Зачем этот блог?</h3>
+        <h3>✍️ Зачем этот блог?</h3>
         <p>Хочу писать о том, что реально помогает расти в Dota 2 — разбирать героев, объяснять мету простым языком и делиться личным опытом.</p>
 
       </article>
@@ -47,12 +54,10 @@
     <script>
       const body = document.body;
       const btn = document.getElementById('theme-btn');
-
       if (localStorage.getItem('theme') === 'light') {
         body.classList.add('light');
         if (btn) btn.textContent = '🌙 Тёмная тема';
       }
-
       function toggleTheme() {
         if (body.classList.contains('light')) {
           body.classList.remove('light');

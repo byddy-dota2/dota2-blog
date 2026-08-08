@@ -12,7 +12,6 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Шапка */
 header {
   background: linear-gradient(135deg, #1a0000, #3d0000);
   color: white;
@@ -35,7 +34,6 @@ header p {
   color: #ccc;
 }
 
-/* Навигация */
 nav {
   background-color: #1a0000;
   text-align: center;
@@ -57,14 +55,12 @@ nav a:hover {
   color: #ff4444;
 }
 
-/* Основной контент */
 main {
   max-width: 780px;
   margin: 40px auto;
   padding: 0 20px;
 }
 
-/* Карточка статьи */
 article {
   background: #1a1a1a;
   border-radius: 10px;
@@ -83,6 +79,11 @@ article h2 {
   font-size: 24px;
   margin-bottom: 12px;
   color: #ff4444;
+}
+
+article h3 {
+  color: #ff4444;
+  margin: 20px 0 8px;
 }
 
 article p {
@@ -105,7 +106,6 @@ article a:hover {
   color: white;
 }
 
-/* Подвал */
 footer {
   text-align: center;
   padding: 30px;
@@ -115,7 +115,6 @@ footer {
   transition: color 0.3s;
 }
 
-/* Тег категории */
 .tag {
   display: inline-block;
   background-color: #3d0000;
@@ -129,14 +128,21 @@ footer {
   transition: background 0.3s;
 }
 
-/* Дата */
 .date {
   color: #555;
   font-size: 13px;
   margin-bottom: 10px;
 }
 
-/* Кнопка переключения темы */
+.hero-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  max-height: 300px;
+  border: 2px solid #3d0000;
+}
+
 #theme-btn {
   background: transparent;
   border: 1px solid #ff4444;
@@ -186,6 +192,10 @@ body.light article h2 {
   color: #cc0000;
 }
 
+body.light article h3 {
+  color: #cc0000;
+}
+
 body.light article p {
   color: #555;
 }
@@ -222,4 +232,8 @@ body.light #theme-btn {
 body.light #theme-btn:hover {
   background: white;
   color: #cc0000;
+}
+
+body.light .hero-img {
+  border-color: #cc0000;
 }
